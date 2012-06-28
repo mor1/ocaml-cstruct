@@ -20,10 +20,12 @@ type byte = char
 val byte : int -> byte
 val byte_to_int : byte -> int
 
-type bytes = string
-
 type uint8 = int
+val uint8 : int -> uint8
+
 type uint16 = int
+val uint16 : int -> uint16
+
 type uint32 = int32
 type uint64 = int64
 

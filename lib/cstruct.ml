@@ -22,20 +22,13 @@ open Array1
 type buf = (char, int8_unsigned_elt, c_layout) Bigarray.Array1.t
 
 type byte = char
-
 let byte (i:int) : byte = Char.chr i
 let byte_to_int (b:byte) = int_of_char b
 
-type bytes = string
-
-let bytes (s:string) : bytes = s
-
 type uint8 = int
-
 let uint8 (i:int) : uint8 = min i 0xff
 
 type uint16 = int
-
 let uint16 (i:int) : uint16 = min i 0xffff
 
 type uint32 = int32
