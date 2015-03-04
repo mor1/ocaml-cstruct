@@ -168,7 +168,7 @@ val of_bigarray: ?off:int -> ?len:int -> buffer -> t
 (** [of_bigarray ~off ~len b] is the cstruct contained in [b] starting
     at [off], of length [len]. *)
 
-val to_bigarray: t -> buffer 
+val to_bigarray: t -> buffer
 (** [to_bigarray t] converts a {!t} into a {!buffer} Bigarray, using
     the Bigarray slicing to allocate a fresh array that preserves
     sharing of the underlying buffer. *)
@@ -300,7 +300,7 @@ val hexdump: t -> unit
 val hexdump_to_buffer: Buffer.t -> t -> unit
 (** [hexdump_to_buffer buf c] will append the pretty-printed hexdump
     of the cstruct [c] to the buffer [buf]. *)
- 
+
 val debug: t -> string
 (** [debug t] will print out the internal details of a cstruct such
     as its base offset and the length, and raise an assertion failure
